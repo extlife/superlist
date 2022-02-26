@@ -24,6 +24,7 @@
 ## Структура папок
 Если допустить, что есть учетная запись пользователя в /home/username
 
+```
 /home/username
 └── sites
     └── SITENAME
@@ -31,3 +32,4 @@
         ├── source
         ├── static
         └── venv
+```

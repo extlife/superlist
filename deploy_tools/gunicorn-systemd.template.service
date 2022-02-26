@@ -3,9 +3,9 @@ Description=Gunicorn server for SITENAME
 
 [Service]
 Restart=on-failure
-User=extlife
-WorkingDirectory=/home/extlife/sites/SITENAME/source
-ExecStart=/home/extlife/sites/SITENAME/venv/bin/gunicorn --bind unix:/tmp/SITENAME.socket superlist.wsgi:application
+User=USERNAME
+WorkingDirectory=/home/USERNAME/sites/SITENAME/source
+ExecStart=/home/USERNAME/sites/SITENAME/venv/bin/gunicorn --bind unix:/tmp/SITENAME.socket PROJECT.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
